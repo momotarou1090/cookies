@@ -1,0 +1,8 @@
+- @cook.each do |cook|
+  .titles
+    =link_to cook_path(cook.id) do
+      =cook.title
+  .descriptions
+    =cook.description
+  .dates
+    =cook.created_at

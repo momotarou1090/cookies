@@ -20,26 +20,26 @@ ActiveRecord::Schema.define(version: 2020_04_11_100627) do
   end
 
   create_table "materials", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "material1", null: false
-    t.string "material2", null: false
-    t.string "material3", null: false
-    t.string "material4", null: false
-    t.string "material5", null: false
-    t.string "material6", null: false
-    t.string "material7", null: false
-    t.string "material8", null: false
-    t.string "material9", null: false
-    t.string "material10", null: false
-    t.string "material11", null: false
-    t.string "material12", null: false
-    t.string "material13", null: false
-    t.string "material14", null: false
-    t.string "material15", null: false
-    t.string "material16", null: false
-    t.string "material17", null: false
-    t.string "material18", null: false
-    t.string "material19", null: false
-    t.string "material20", null: false
+    t.string "material1"
+    t.string "material2"
+    t.string "material3"
+    t.string "material4"
+    t.string "material5"
+    t.string "material6"
+    t.string "material7"
+    t.string "material8"
+    t.string "material9"
+    t.string "material10"
+    t.string "material11"
+    t.string "material12"
+    t.string "material13"
+    t.string "material14"
+    t.string "material15"
+    t.string "material16"
+    t.string "material17"
+    t.string "material18"
+    t.string "material19"
+    t.string "material20"
     t.bigint "cook_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -59,26 +59,26 @@ ActiveRecord::Schema.define(version: 2020_04_11_100627) do
   end
 
   create_table "works", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "work1", null: false
-    t.string "work2", null: false
-    t.string "work3", null: false
-    t.string "work4", null: false
-    t.string "work5", null: false
-    t.string "work6", null: false
-    t.string "work7", null: false
-    t.string "work8", null: false
-    t.string "work9", null: false
-    t.string "work10", null: false
-    t.string "work11", null: false
-    t.string "work12", null: false
-    t.string "work13", null: false
-    t.string "work14", null: false
-    t.string "work15", null: false
-    t.string "work16", null: false
-    t.string "work17", null: false
-    t.string "work18", null: false
-    t.string "work19", null: false
-    t.string "work20", null: false
+    t.string "work1"
+    t.string "work2"
+    t.string "work3"
+    t.string "work4"
+    t.string "work5"
+    t.string "work6"
+    t.string "work7"
+    t.string "work8"
+    t.string "work9"
+    t.string "work10"
+    t.string "work11"
+    t.string "work12"
+    t.string "work13"
+    t.string "work14"
+    t.string "work15"
+    t.string "work16"
+    t.string "work17"
+    t.string "work18"
+    t.string "work19"
+    t.string "work20"
     t.bigint "cook_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

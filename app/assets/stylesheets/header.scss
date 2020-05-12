@@ -2,4 +2,28 @@
   height: 90px;
   width: 100%;
   background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  .header__right {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 300px;
+    align-items: center;
+    a {
+      color: white;
+    }
+  }
+  .header__left {
+    position: absolute;
+    top: 32px;
+    left: 80px;
+    a {
+      color: white;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
 }

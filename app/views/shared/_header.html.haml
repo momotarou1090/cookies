@@ -1,6 +1,14 @@
 .header-wrapper
-  -if user_signed_in?
-    = link_to "ログアウト", destroy_user_session_path, class: "header__right--btn"
-  -else
-    = link_to "ログイン", new_user_session_path, class: "header__right--btn"
-    = link_to "新規登録", new_user_registration_path, class: "header__right--btn"
+  .header__right
+    -if user_signed_in?
+      .header__right__login
+        = link_to "マイページ", "#", class: "header__right__login"
+        = link_to "ログアウト", destroy_user_session_path, class: "header__right__login"
+    -else
+      .header__right__logout
+        = link_to "ログイン", new_user_session_path, class: "header__right__logout--log"
+        = link_to "新規登録", new_user_registration_path, class: "header__right__logout--new"
+  .header__left
+    -if user_signed_in?
+      .header__left__new
+        = link_to "投稿する", new_cook_path, class:"header__left__new"

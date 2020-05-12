@@ -1,26 +1,26 @@
 class CreateWorks < ActiveRecord::Migration[5.2]
   def change
     create_table :works do |t|
-      t.string :work1, null: false
-      t.string :work2, null: false
-      t.string :work3, null: false
-      t.string :work4, null: false
-      t.string :work5, null: false
-      t.string :work6, null: false
-      t.string :work7, null: false
-      t.string :work8, null: false
-      t.string :work9, null: false
-      t.string :work10, null: false
-      t.string :work11, null: false
-      t.string :work12, null: false
-      t.string :work13, null: false
-      t.string :work14, null: false
-      t.string :work15, null: false
-      t.string :work16, null: false
-      t.string :work17, null: false
-      t.string :work18, null: false
-      t.string :work19, null: false
-      t.string :work20, null: false
+      t.string :work1
+      t.string :work2
+      t.string :work3
+      t.string :work4
+      t.string :work5
+      t.string :work6
+      t.string :work7
+      t.string :work8
+      t.string :work9
+      t.string :work10
+      t.string :work11
+      t.string :work12
+      t.string :work13
+      t.string :work14
+      t.string :work15
+      t.string :work16
+      t.string :work17
+      t.string :work18
+      t.string :work19
+      t.string :work20
 
       t.references :cook, index: true, foreign_key: true
 

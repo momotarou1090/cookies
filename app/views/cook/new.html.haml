@@ -1,1 +1,8 @@
-
+= form_with model: @cook, url: cook_index_path, local: true do |f|
+  = f.text_field :title,placeholder: "タイトル" , class:"title"
+  = f.text_field :description, placeholder: "説明" , class:"description"
+  = f.fields_for :materials do |m|
+    = m.text_field :material1, placeholder: "食材1", class:"material1"
+  = f.fields_for :works do |w|
+    = w.text_field :work1, placeholder: "工程1", class:"work1"
+  = f.submit "登録する"

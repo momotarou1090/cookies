@@ -1,26 +1,26 @@
 class CreateMaterials < ActiveRecord::Migration[5.2]
   def change
     create_table :materials do |t|
-      t.string :material1, null: false
-      t.string :material2, null: false
-      t.string :material3, null: false
-      t.string :material4, null: false
-      t.string :material5, null: false
-      t.string :material6, null: false
-      t.string :material7, null: false
-      t.string :material8, null: false
-      t.string :material9, null: false
-      t.string :material10, null: false
-      t.string :material11, null: false
-      t.string :material12, null: false
-      t.string :material13, null: false
-      t.string :material14, null: false
-      t.string :material15, null: false
-      t.string :material16, null: false
-      t.string :material17, null: false
-      t.string :material18, null: false
-      t.string :material19, null: false
-      t.string :material20, null: false
+      t.string :material1
+      t.string :material2
+      t.string :material3
+      t.string :material4
+      t.string :material5
+      t.string :material6
+      t.string :material7
+      t.string :material8
+      t.string :material9
+      t.string :material10
+      t.string :material11
+      t.string :material12
+      t.string :material13
+      t.string :material14
+      t.string :material15
+      t.string :material16
+      t.string :material17
+      t.string :material18
+      t.string :material19
+      t.string :material20
       
       t.references :cook, index: true, foreign_key: true
 
